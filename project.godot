@@ -1,0 +1,35 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[  ]
+_global_script_class_icons={
+
+}
+
+[application]
+
+config/name="chart-gd"
+run/main_scene="res://example/example.tscn"
+config/icon="res://icon.png"
+
+[gui]
+
+timers/tooltip_delay_sec=0.1
+
+[importer_defaults]
+
+texture={
+"flags/filter": true,
+"flags/mipmaps": true
+}
+
+[physics_2d]
+
+motion_fix_enabled=true
