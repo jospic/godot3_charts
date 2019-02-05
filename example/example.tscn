@@ -67,9 +67,9 @@ text = "All labels"
 
 [node name="container" type="VBoxContainer" parent="."]
 margin_left = 360.0
-margin_top = 20.0
+margin_top = 18.0
 margin_right = 680.0
-margin_bottom = 96.0
+margin_bottom = 100.0
 mouse_filter = 0
 
 [node name="controls" type="HBoxContainer" parent="container"]

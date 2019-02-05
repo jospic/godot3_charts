@@ -75,12 +75,14 @@ func set_labels(show_label):
     min_y += LABEL_SPACE.y
     max_y -= min_y
 
+  
   current_data_size = max(0, current_data_size - 1)
   move_other_sprites()
   current_data_size = current_data.size()
-  _update_draw()
-  get_node("../container/controls/add_data").emit_signal("pressed")
-
+  update()
+  # get_node("../container/controls/add_data").emit_signal("pressed")
+  tween_node.start() 
+ 
 
 func _on_mouse_over(label_type):
   current_mouse_over = label_type
@@ -102,7 +104,8 @@ func set_max_values(max_values):
   current_data_size = max(0, current_data_size - 1)
   move_other_sprites()
   current_data_size = current_data.size()
-  get_node("../container/controls/add_data").emit_signal("pressed")
+  tween_node.start()
+  #get_node("../container/controls/add_data").emit_signal("pressed")
 
 func _draw():
   var vertical_line = [Vector2(min_x, min_y), Vector2(min_x, min_y + max_y)]
