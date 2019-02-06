@@ -4,7 +4,7 @@ This is porting for Godot Engine version 3.x of original module (for version 2.1
 
 ## Preview
 
-![Demo](./assets/charts.gif "Example")
+![Demo](./assets/charts.gif "Example in Godot 3")
 
 ## Usage
 
